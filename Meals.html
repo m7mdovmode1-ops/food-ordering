@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>الوجبات</title>
+    <link rel="stylesheet" href="css/Style.css" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/myFunctions.js"></script>
+</head>
+<body dir="rtl">
+    <header>
+        <h1>مطعم الوجبات اللذيذة</h1>
+        <div>
+            <a href="home.html" class="nav-link">الرئيسية</a>
+            <a href="Meals.html" class="nav-link">الوجبات</a>
+            <a href="AboutUs.html" class="nav-link">من نحن</a>
+        </div>
+    </header>
+
+    <div class="meals-container">
+        <h2 style="margin: 20px 0 10px 0;">قائمة الوجبات</h2>
+        <table class="meals-table">
+            <thead>
+                <tr>
+                    <th>الرمز</th>
+                    <th>الوجبة</th>
+                    <th>الصورة</th>
+                    <th>السعر</th>
+                    <th>إظهار التفاصيل</th>
+                    <th>اختيار</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                <!-- SF-001 -->
+                <tr class="meal-row">
+                    <td>SF-001</td>
+                    <td>وجبة سمك بوري مشوي لشخصين</td>
+                    <td><img class="meal-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Grilled_fish.jpg/320px-Grilled_fish.jpg" alt="سمك بوري مشوي"></td>
+                    <td>110,000 ل.س</td>
+                    <td><button class="details-btn" data-id="SF001">إظهار</button></td>
+                    <td><input type="checkbox" class="meal-checkbox" data-id="SF001" data-name="وجبة سمك بوري مشوي لشخصين" data-price="110000"></td>
+                </tr>
+                <tr class="details-row" id="details-SF001">
+                    <td colspan="6">
+                        <div class="details-content">
+                            <div class="detail-inner">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Grilled_fish.jpg/320px-Grilled_fish.jpg" alt="سمك بوري">
+                                <div class="detail-text">
+                                    <h4>وجبة سمك بوري مشوي لشخصين</h4>
+                                    <p><strong>المطبخ:</strong> المصري</p>
+                                    <p><strong>تصنيف الطعام:</strong> مأكولات بحرية</p>
+                                    <p><strong>المكونات:</strong></p>
+                                    <ul>
+                                        <li>4 سمكات بوري أحمر، مغسول ومنظف</li>
+                                        <li>بضعة أوراق من الأوريجانو الطازج، مقطعة</li>
+                                        <li>1 ملعقة صغيرة من ملح الطعام</li>
+                                        <li>1 ملعقة صغيرة من الفلفل الأسود المطحون</li>
+                                    </ul>
+                                    <p><strong>الصلصة:</strong></p>
+                                    <ul>
+                                        <li>1 ملعقة كبيرة من زيت الزيتون</li>
+                                        <li>3 فصوص ثوم مقشرة ومقطعة بشكل ناعم</li>
+                                        <li>6 حبات طماطم طرية، مفرومة</li>
+                                        <li>1/2 ليمونة معصورة</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+                <!-- SF-002 -->
+                <tr class="meal-row">
+                    <td>SF-002</td>
+                    <td>طبق روبيان مشوي</td>
+                    <td><img class="meal-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Grilled_shrimp.jpg/320px-Grilled_shrimp.jpg" alt="روبيان مشوي"></td>
+                    <td>135,000 ل.س</td>
+                    <td><button class="details-btn" data-id="SF002">إظهار</button></td>
+                    <td><input type="checkbox" class="meal-checkbox" data-id="SF002" data-name="طبق روبيان مشوي" data-price="135000"></td>
+                </tr>
+                <tr class="details-row" id="details-SF002">
+                    <td colspan="6">
+                        <div class="details-content">
+                            <div class="detail-inner">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Grilled_shrimp.jpg/320px-Grilled_shrimp.jpg" alt="روبيان">
+                                <div class="detail-text">
+                                    <h4>طبق روبيان مشوي</h4>
+                                    <p><strong>المطبخ:</strong> البحر الأبيض المتوسط</p>
+                                    <p><strong>تصنيف الطعام:</strong> مأكولات بحرية</p>
+                                    <p><strong>المكونات:</strong></p>
+                                    <ul>
+                                        <li>500 غرام روبيان طازج منزوع القشر</li>
+                                        <li>3 ملاعق زيت زيتون</li>
+                                        <li>ثوم، ليمون، بهارات متنوعة</li>
+                                        <li>بقدونس طازج للتزيين</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+                <!-- SF-003 -->
+                <tr class="meal-row">
+                    <td>SF-003</td>
+                    <td>كباب مشوي مع الخضار</td>
+                    <td><img class="meal-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Beef_kebabs.jpg/320px-Beef_kebabs.jpg" alt="كباب مشوي"></td>
+                    <td>95,000 ل.س</td>
+                    <td><button class="details-btn" data-id="SF003">إظهار</button></td>
+                    <td><input type="checkbox" class="meal-checkbox" data-id="SF003" data-name="كباب مشوي مع الخضار" data-price="95000"></td>
+                </tr>
+                <tr class="details-row" id="details-SF003">
+                    <td colspan="6">
+                        <div class="details-content">
+                            <div class="detail-inner">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Beef_kebabs.jpg/320px-Beef_kebabs.jpg" alt="كباب">
+                                <div class="detail-text">
+                                    <h4>كباب مشوي مع الخضار</h4>
+                                    <p><strong>المطبخ:</strong> الشرقي</p>
+                                    <p><strong>تصنيف الطعام:</strong> لحوم</p>
+                                    <p><strong>المكونات:</strong></p>
+                                    <ul>
+                                        <li>500 غرام لحم عجل مفروم</li>
+                                        <li>بصل، بقدونس، بهارات</li>
+                                        <li>فلفل ألوان وطماطم للمشوي</li>
+                                        <li>خبز عربي وسلطة جانبية</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+                <!-- SF-004 -->
+                <tr class="meal-row">
+                    <td>SF-004</td>
+                    <td>دجاج مشوي على الفحم</td>
+                    <td><img class="meal-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Grilled_chicken_wings.jpg/320px-Grilled_chicken_wings.jpg" alt="دجاج مشوي"></td>
+                    <td>80,000 ل.س</td>
+                    <td><button class="details-btn" data-id="SF004">إظهار</button></td>
+                    <td><input type="checkbox" class="meal-checkbox" data-id="SF004" data-name="دجاج مشوي على الفحم" data-price="80000"></td>
+                </tr>
+                <tr class="details-row" id="details-SF004">
+                    <td colspan="6">
+                        <div class="details-content">
+                            <div class="detail-inner">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Grilled_chicken_wings.jpg/320px-Grilled_chicken_wings.jpg" alt="دجاج">
+                                <div class="detail-text">
+                                    <h4>دجاج مشوي على الفحم</h4>
+                                    <p><strong>المطبخ:</strong> عربي</p>
+                                    <p><strong>تصنيف الطعام:</strong> دواجن</p>
+                                    <p><strong>المكونات:</strong></p>
+                                    <ul>
+                                        <li>دجاجة كاملة منظفة ومقطعة</li>
+                                        <li>تتبيلة: ثوم، كمون، كركم، ليمون</li>
+                                        <li>زيت زيتون وملح</li>
+                                        <li>يُقدَّم مع أرز وسلطة</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+                <!-- SF-005 -->
+                <tr class="meal-row">
+                    <td>SF-005</td>
+                    <td>مقلوبة دجاج وخضار</td>
+                    <td><img class="meal-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Maqluba.jpg/320px-Maqluba.jpg" alt="مقلوبة"></td>
+                    <td>75,000 ل.س</td>
+                    <td><button class="details-btn" data-id="SF005">إظهار</button></td>
+                    <td><input type="checkbox" class="meal-checkbox" data-id="SF005" data-name="مقلوبة دجاج وخضار" data-price="75000"></td>
+                </tr>
+                <tr class="details-row" id="details-SF005">
+                    <td colspan="6">
+                        <div class="details-content">
+                            <div class="detail-inner">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Maqluba.jpg/320px-Maqluba.jpg" alt="مقلوبة">
+                                <div class="detail-text">
+                                    <h4>مقلوبة دجاج وخضار</h4>
+                                    <p><strong>المطبخ:</strong> الشامي</p>
+                                    <p><strong>تصنيف الطعام:</strong> أطباق رئيسية</p>
+                                    <p><strong>المكونات:</strong></p>
+                                    <ul>
+                                        <li>أرز بسمتي، دجاج مسلوق</li>
+                                        <li>باذنجان، بطاطا، جزر</li>
+                                        <li>بهارات المقلوبة: قرفة، هيل، فلفل أسود</li>
+                                        <li>يُقدَّم مع لبن وسلطة</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+
+        <div class="continue-section">
+            <button class="btn-continue" id="continueBtn">متابعة ←</button>
+        </div>
+    </div>
+
+    <!-- نموذج الطلب -->
+    <div class="order-form-section" id="orderFormSection">
+        <h2>بيانات الطلب</h2>
+        <div id="selectedMealsSummary"></div>
+
+        <label>الاسم الكامل (أحرف عربية فقط)</label>
+        <input type="text" id="fullName" placeholder="مثال: محمد أحمد الحسن">
+        <span class="error-msg" id="nameErr">الاسم يجب أن يحتوي على أحرف عربية فقط</span>
+
+        <label>الرقم الوطني (11 خانة)</label>
+        <input type="text" id="nationalId" placeholder="مثال: 01234567890" maxlength="11">
+        <span class="error-msg" id="idErr">الرقم الوطني يجب أن يكون 11 خانة وأول خانتين بين 01-14</span>
+
+        <label>تاريخ الولادة</label>
+        <input type="date" id="birthDate">
+        <span class="error-msg" id="birthErr">يرجى إدخال تاريخ ولادة صحيح</span>
+
+        <label>رقم الموبايل (Syriatel أو MTN)</label>
+        <input type="tel" id="mobile" placeholder="مثال: 0933123456">
+        <span class="error-msg" id="mobileErr">رقم الموبايل يجب أن يبدأ بـ 09 ويتبعه 8 أرقام (09xx أو 09xx)</span>
+
+        <label>البريد الإلكتروني</label>
+        <input type="email" id="email" placeholder="example@mail.com">
+        <span class="error-msg" id="emailErr">يرجى إدخال بريد إلكتروني صحيح</span>
+
+        <div class="form-actions">
+            <button class="btn-submit" id="submitBtn">إرسال</button>
+            <button class="btn-reset" id="resetFormBtn">إعادة</button>
+        </div>
+    </div>
+
+    <!-- نافذة النتيجة -->
+    <div class="popup hidden" id="resultPopup">
+        <div class="popup-content">
+            <span class="popup-close" id="closePopup">&times;</span>
+            <h2>تفاصيل الطلب</h2>
+            <div id="popupBody"></div>
+        </div>
+    </div>
+
+</body>
+</html>
